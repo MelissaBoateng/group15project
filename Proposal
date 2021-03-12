@@ -1,0 +1,43 @@
+Biometric Voter’s Registration (Analysis and Proposal)
+
+ 
+ Caleb Otchi 
+Computer Science
+Ashesi	University
+Caleb.Otchi@aucampus.onmicrosoft.com
+Audrey Obuobisa-Darko
+Computer Science
+Ashesi	University
+Audrey.Obuobisa@aucampus.onmicrosoft.com
+
+
+ 
+Kweku Kyem Quansah 
+Computer Science
+Ashesi	University
+Kweku.Quansah@aucampus.onmicrosoft.com
+
+
+ 
+Melissa Boateng 
+Computer Science
+Ashesi	University
+Melissa.Boateng@aucampus.onmicrosoft.com
+
+ 
+ 
+ 
+Abstract—This document seeks to critique the proposal brought to the electoral commission of Ghana by Mr. Chukuka Anowu in 2015.
+Keywords—biometric voter’s registration, DRE, encryption.
+I.	ANALYSIS AND PROPOSAL.
+The system proposed by Mr. Chukuka Anowu in 2015, appears to be 75% efficient to our team after considering all the proposed components of the biometric voting system. It is quite an impressive one especially the part that has to do with real time collation of election results whereas eligible voters vote, the election result at each polling station would be automatically updated and recorded in a matter of seconds. We believe this would help increase the credibility of the electoral commission since citizens would not have to question how and why figures are changing and also everyone would in a way know the outcome of the elections even before the electoral commission comes to announce. Adopting this would help save and reduce the time it takes for the declaration of results.
+In addition to that, questions were raised in line with the biometric authentication. Arguably, thumbprinting is currently the most utilized method for identification and authentication however, centering biometric authentication around thumbprints/fingerprints is a little bit biased, this is because what would happen to disabled persons who had no hands? Would that mean they would not be able to register and cast their votes? We suggest that other means of taking biometric data could be looked at. For example, the system could make use of the eye-iris recognition, eye-retina recognition, face recognition and voice-speaker identification for persons suffering from some kind of disability. However, these biometric data collection methods have not been proven to be entirely secure and efficient therefore, we suggest that they would be used in pairs. That is, the eye-iris recognition could be paired with the voice recognition because we believe that there could be instances where people may have the same voice pattern. The eye-iris and eye-retina recognition could be done by using scanners which work by illuminating the iris and retina with invisible infrared light to pick the unique patterns that are not visible to the naked eye.
+Lastly, concerns were raised about the Direct Recording system (DRE). Is that component of the entire system credible and reliable? Does it work on the principle of what you see is what you get? In the sense that if a voter should click on for example “choice one”, would it be read as “choice one” or can the backend be jinxed in such a way that voters’ choices can be tempered with? Does the DRE support the one person, one vote policy? To clear all doubts, we think a memoryless DRE would be of much help since it erases data after one voter votes so that it does not save the previous voter’s details which could be used to predict the trend of the election.
+ To ensure that the voting process is secure and reliable we suggest that the developers adopt the symmetric key cryptography which would be used to encrypt the contents of a voter’s ballot selection. In addition to that, the voters’ choice and identity would be hidden using mix-nets. Where encrypted stored data would be taken and then re-crypted and mixed in the order which it was stored.
+II.	TECHNOLOGIES AND DATA STRUCTURES
+Votes at the polling station would be stored in an array and sorted using the counting sort algorithm. Counting Sort Algorithm is an efficient sorting algorithm that can be used for sorting elements within a specific range. This sorting technique is based on the frequency/count of each element to be sorted. At the District level these votes would still be stored in an array, however they would be sorted using the merge sort algorithm. At the regional office, since all districts have already sorted the votes into arrays, the sorted arrays would then be stacked onto each other in an orderly manner. At the national headquarters, the data set would be represented using a queue data structure, every region brings their stacked result, and it is placed at the bottom of the array.
+Java Card 3 is the latest version of Java Card, which could be considered as voter's portable secure Web server. Therefore, we would make use of this to make sure the system is secure, and voters’ privacy is not breached.
+
+REFERENCES
+[1]“GRIN - Biometric Voting System in Ghana. A Case Study,” www.grin.com. https://www.grin.com/document/312467 (accessed Mar. 12, 2021).
+
